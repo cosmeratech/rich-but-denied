@@ -16,14 +16,21 @@ The project focuses on modeling how systems enforce rules consistently, even whe
 This project demonstrates the following core programming concepts:
 
 Private properties to protect sensitive data like balance and limits
+
 Inheritance to create specialized account types
+
 Method overriding to customize behavior in derived accounts
+
 Polymorphism through a shared payment interface
+
 Map-based rule storage for category-specific limits
 
 # How It Works
 
 Every account starts with a balance
+
 Spending limits are defined per category (food, shopping, travel, etc.)
+
 A payment is processed only if it satisfies both balance and policy rules
+
 Each account type logs payments differently while following the same interface
