@@ -20,7 +20,7 @@ class BankAccount {
 
   pay(type, amount) {
     if (!this.canPay(type, amount)) {
-      console.log("❌ Payment blocked");
+      console.log("Payment blocked!");
       return;
     }
 
@@ -35,19 +35,19 @@ class BankAccount {
 
 class TeenAccount extends BankAccount {
   processPayment(type, amount) {
-    console.log(`👶 Teen account paid ₹${amount} for ${type}`);
+    console.log(`Teen account paid ₹${amount} for ${type}`);
   }
 }
 
 class AdultAccount extends BankAccount {
   processPayment(type, amount) {
-    console.log(`👩 Adult account payment: ₹${amount} for ${type}`);
+    console.log(`Adult account payment: ₹${amount} for ${type}`);
   }
 }
 
 class CorporateAccount extends BankAccount {
   processPayment(type, amount) {
-    console.log(`🏢 Corporate expense logged: ₹${amount} for ${type}`);
+    console.log(`Corporate expense logged: ₹${amount} for ${type}`);
   }
 }
 
