@@ -28,6 +28,10 @@ class BankAccount {
     this.processPayment(type, amount);
   }
 
+  getBalance() {
+    return this.#balance;
+  }
+
   processPayment(type, amount) {
     console.log(`Paid ₹${amount} for ${type}`);
   }
