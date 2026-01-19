@@ -43,7 +43,9 @@ To view the current balance of each account, use the provided public method and 
 After running the payment operations, add the following lines in the browser console:
 
 console.log("Teen balance:", teen.getBalance());
+
 console.log("Adult balance:", adult.getBalance());
+
 console.log("Corp balance:", corp.getBalance());
 
 
